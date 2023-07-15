@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: white;
+    --third-color: orange;
+    --text-color: black;
+    --bg-color: white;
+ }
+
+ body{
+    background: var(--bg-color);
+ }
+
+  .flex button{
+    background: var(--secondary-color);
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+    transition: 1.2s ease;
+  }
+  
+  .flex button:hover{
+    color: var(--text-color);
+    background: var(--third-color);
+    border: var(--third-color);
+  }
+
+  .flex h1{
+    color: var(--text-color);
+  }
+
+  .flex h2{
+    color: aliceblue;
+  }
+
+  svg path{
+    background: var(--third-color);
+    color: var(--third-color);
+  }
+
+  p{
+    color: var(--text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+  }
+
+
+  .order{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+
+  }
+  .flex span{
+    color: var(--text-color);
+  }
+
+  .flex span del{
+    color: red;
+  }
+
+  .order button{
+    margin-left: 10px;
+  }
+
+  button svg path:hover{
+    color: var(--text-color);
+    background: var(--third-color);
+    border: var(--third-color);
+  }
+
+  .flex a svg path:hover{
+    color: var(--text-color);
+    cursor: pointer;
+  }

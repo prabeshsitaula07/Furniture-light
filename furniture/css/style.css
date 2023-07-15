@@ -1,0 +1,463 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: white;
+  --third-color: orange;
+  --text-color: black;
+  --bg-color: white;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: system-ui;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: var(--text-color);
+}
+
+header span {
+  color: var(--third-color);
+}
+
+.text-gray-600 a:hover,
+.text-gray-600 a:focus {
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+
+.home-page {
+  height: 100vh;
+  background: #00000005;
+  background-image: url(backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(105%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-container {
+  height: 70%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.2);
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-page h1 {
+  color: aqua;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.home-page p {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+
+
+.about-page h1 {
+  color: var(--third-color);
+  font-size: 40px;
+}
+
+.about-page p {
+  color: var(--text-color);
+  text-align: justify;
+}
+
+h1 span {
+  font-size: 20px;
+  color: grey;
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+.about-page {
+  background: var(--bg-color);
+}
+
+
+.about-page button,
+.home-page button {
+  color: var(--text-color);
+  background: var(--third-color);
+  border: none;
+  transition: 1.2s ease;
+}
+
+.home-page button:hover {
+  background: var(--secondary-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+
+}
+
+.about-page button:hover {
+  background: var(--secondary-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+
+}
+
+.navbar-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.about-page .container {
+  flex-direction: column;
+}
+
+.another {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media(max-width: 767px) {
+
+  .home-page p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about-page h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .another {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 445px) {
+  .home-page h1 {
+    font-size: 30px;
+  }
+}
+
+.stats {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  width: 100%;
+}
+
+.stats h2 {
+  color: var(--third-color);
+  font-size: 40px;
+}
+
+.stats p {
+  color: var(--third-color);
+}
+
+
+@media(max-width: 980px) {
+  .stats {
+    height: 260px;
+  }
+}
+
+.service-box {
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-box p {
+  color: var(--text-color);
+}
+
+.service-box h2 {
+  color: black;
+}
+
+.service-box p del {
+  color: red;
+}
+
+.service-container {
+  border: 1px solid;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+._testimonial {
+  background-image: url(home-background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonial {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.testimonial .navbar-title {
+  color: white;
+}
+
+.testimonial p {
+  color: var(--text-color);
+}
+
+.testimonial a span {
+  color: var(--third-color);
+}
+
+.service-box hr {
+  width: 80%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+
+.container-faqs {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  width: 100%;
+  height: fit-content;
+}
+
+
+details {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+.offer {
+  background: var(--secondary-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.offer img {
+  width: 80%;
+  padding: 10px;
+  height: 90%;
+}
+
+.container-faqs .navbar-title {
+  padding-top: 80px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: "\002B";
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: .5em 1em;
+}
+
+.faqs div {
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+summary span {
+  color: var(--third-color);
+}
+
+@media(max-width: 700px) {
+  summary {
+    font-size: 18px;
+  }
+}
+
+.contact-page {
+  background-color: var(--bg-color);
+}
+
+.contact-page h2 {
+  color: var(--text-color);
+}
+
+.contact-page p {
+  color: var(--text-color);
+}
+
+.contact-page .navbar-title {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+
+}
+
+.contact-page button {
+  color: var(--text-color);
+  background: var(--third-color);
+  border: none;
+  transition: 1.2s ease;
+  width: auto;
+  margin: 20px;
+}
+
+.contact-page button:hover {
+  background: var(--secondary-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+
+label {
+  color: var(--third-color);
+}
+
+.about-page img {
+  border: 3px solid var(--third-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px hotpink;
+}
+
+.footer {
+  background: black;
+  margin-top: 60px;
+}
+
+.footer .navbar-title {
+  color: white;
+}
+
+.footer h2 {
+  color: var(--third-color);
+}
+
+.footer li a {
+  color: white;
+}
+
+.footer label {
+  color: red;
+}
+
+.footer button {
+  color: var(--text-color);
+  background: var(--third-color);
+  border: none;
+  transition: 1.2s ease;
+  width: auto;
+
+}
+
+.footer button:hover {
+  background: var(--secondary-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+
+.footer input[type="text"] {
+  color: white;
+}
+
+
+.footer span {
+  color: black;
+  font-size: 16px;
+}
+
+
+.footer-contact li a {
+  color: gray;
+  font-weight: lighter;
+}
+
+.footer-contact li a:hover {
+  cursor: text;
+}
+
+@media(max-width: 1024px) {
+  .footer-contact {
+    width: 50%;
+  }
+}
+
+.footer-contact li .address-list a {
+  font-size: 18px;
+}
+
+@media(max-width: 767px) {
+  .footer-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
